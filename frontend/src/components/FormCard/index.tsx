@@ -26,8 +26,9 @@ function FormCard({ movieId }: Props) {
         event.preventDefault();
         const email = (event.target as any).email.value;
         const score = (event.target as any).score.value;
+        console.log(email, score)
 
-        if (validateEmail(email)) {
+        if (!validateEmail(email)) {
             return;
 
         }
@@ -44,7 +45,7 @@ function FormCard({ movieId }: Props) {
         }
         axios(config).then(response => {
             console.log(response.data);
-            navigate("/");
+            navigate("/")
 
         });
 
