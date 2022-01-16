@@ -1,1 +1,1 @@
-export const BASE_URL = process.env.REACT_APP_BACKENDMOVIE_URL ?? "http://localhost:8080";
+export const BASE_URL = process.env.REACT_APP_BACKENDMOVIEMS_URL ?? "http://localhost:8080";
