@@ -38,5 +38,7 @@ public class ScorePk implements Serializable {
 	public void setUser(User user) {
 		this.user = user;
 	}
+	
+	
 
 }
